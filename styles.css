@@ -73,6 +73,65 @@ nav ul li a:hover {
     animation: fadeInUp 1s forwards;
 }
 
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    flex: 0 0 100%;
+    height: auto;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 20px;
+}
+
+.carousel-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Add responsiveness to the carousel */
+@media (max-width: 768px) {
+    .carousel img {
+        height: auto;
+    }
+
+    .carousel-btn {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+
 .gallery, .video-gallery {
     display: grid;
     gap: 15px;
