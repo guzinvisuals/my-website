@@ -256,3 +256,7 @@ footer {
         font-size: 20px;
     }
 }
+
+
+/* slide */
+#ninja-slider div.slider-inner { max-width:800px; }
