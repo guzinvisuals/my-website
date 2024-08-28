@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,58 +9,84 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <div class="logo">
+            <h1>My Portfolio</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="#photos">Photos</a></li>
-                <li><a href="#videos">Videos</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#photos" class="nav-link">Photos</a></li>
+                <li><a href="#videos" class="nav-link">Videos</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="photos">
-        <h2>Photos</h2>
+    <section id="home" class="section">
+        <div class="intro">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Explore my creative work through photos and videos.</p>
+        </div>
+        <div class="scroll-down">
+            <p>Scroll down</p>
+            <span>&#8595;</span>
+        </div>
+    </section>
+
+    <section id="photos" class="section">
+        <h2 class="section-title">Photos</h2>
         <div class="gallery">
             <!-- Add your photos here -->
-            <img src="photo1.jpg" alt="Photo 1">
-            <img src="photo2.jpg" alt="Photo 2">
-            <img src="photo3.jpg" alt="Photo 3">
+            <div class="gallery-item"><img src="photo1.jpg" alt="Photo 1"></div>
+            <div class="gallery-item"><img src="photo2.jpg" alt="Photo 2"></div>
+            <div class="gallery-item"><img src="photo3.jpg" alt="Photo 3"></div>
             <!-- Add more photos as needed -->
         </div>
     </section>
 
-    <section id="videos">
-        <h2>Videos</h2>
+    <section id="videos" class="section">
+        <h2 class="section-title">Videos</h2>
         <div class="video-gallery">
             <!-- Add your videos here -->
-            <video controls>
-                <source src="video1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <video controls>
-                <source src="video2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <video controls>
-                <source src="video3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="video-item">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="video3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <!-- Add more videos as needed -->
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Me</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
             
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
             
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
             
             <button type="submit">Send</button>
         </form>
